@@ -61,7 +61,7 @@ body
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
-	z-index: -5
+	z-index: 1
 	position: relative
 	&::after
 		content: ''
@@ -80,6 +80,7 @@ body
 	bottom: -58px
 	height: 116px
 	padding-left: 11px
+	z-index: 2
 	@extend .clearfix
 	&__item
 		float: left
@@ -95,7 +96,8 @@ body
 	&__link
 		color: #f8f8f8
 		font-size: em(24px)
-		font-family: "UbuntuBold", sans-serif
+		font-family: "UbuntuLight", sans-serif
+		font-weight: bold
 		display: block
 		padding: 14px 0
 		border-bottom: 6px solid transparent
@@ -144,6 +146,7 @@ body
 	&__wrapper
 		text-align: center
 		padding-top: 70px
+		padding-bottom: 133px
 	&__title
 		color: $black
 		font-size: em(36px)
@@ -178,12 +181,59 @@ body
 			border-bottom: 11px solid #242424
 			background-color: #eee
 			padding: 0 26px
+			display: none
 			&-img
 				padding-top: 12px
 				width: 204px
 				height: auto
 				display: block
 				margin: 0 auto
+			&-name
+				color: #2d2d2d
+				font-family: "UbuntuLight", sans-serif
+				font-weight: bold
+				font-size: em(20px)
+				margin-bottom: 14px
+			&-description
+				color: #2d2d2d
+				font-family: "UbuntuLight", sans-serif
+				font-weight: bold
+				font-size: em(14px)
+				letter-spacing: 0.5px
+				text-align: left
+				display: block
+				margin-bottom: 21px
+			&-row
+				background-color: #d5af74
+				width: 100%
+				@extend .clearfix
+				padding: 0 15px 0 6px
+				margin-bottom: 14px
+				&-r
+					float: left
+					display: block
+					font-family: "UbuntuLight", sans-serif
+					font-weight: bold
+					font-size: em(14px)
+					letter-spacing: 0.5px
+					color: #2d2d2d
+				&-c
+					float: right
+					display: block
+					padding-right: 19px
+					position: relative
+					color: #7a3507
+					font-family: "UbuntuLight", sans-serif
+					font-weight: bold
+					font-size: em(14px)
+					letter-spacing: 0.5px
+					&::after
+						content: "\f158"
+						font-family: FontAwesome
+						position: absolute
+						right: 0
+						top: 50%
+						transform: translateY(-50%)
 	&__tov
 		padding-top: 32px
 		@extend .clearfix
@@ -204,3 +254,307 @@ body
 			width: 300px
 			margin: 0 auto
 			height: auto
+	&__more
+		text-align: right
+		display: block
+		width: 100%
+		&-link
+			font-family: "RobotoBlack", sans-serif
+			font-size: em(18px)
+			color: #4463c6
+			display: inline-block
+			border-bottom: 1px solid #4463c6
+			line-height: 100%
+			&:hover
+				color: #4463c6
+				border-bottom: 1px solid transparent
+	&__button
+		color: #ededec
+		font-size: em(38px)
+		letter-spacing: 0.25px
+		height: 80px
+		line-height: 80px
+		display: inline-block
+		background-color: #377217
+		padding: 0 80px
+		border-radius: 5px
+		-webkit-box-shadow: 3px 3px 0px 0px rgba(31,63,14,1)
+		-moz-box-shadow: 3px 3px 0px 0px rgba(31,63,14,1)
+		box-shadow: 3px 3px 0px 0px rgba(31,63,14,1)
+		&-wrapper
+			padding-top: 44px
+			text-align: center
+.lumber-block
+	background-image: url(../img/bg-home-s.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	min-height: 841px
+	position: relative
+	z-index: 1
+	&::after
+		background-color: rgba(#c4c4c4,.95)
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: -2
+.lumber
+	text-align: center
+	&__wrapper
+	padding-top: 146px
+	&__title
+		display: inline-block
+		text-transform: uppercase
+		color: #1a1919
+		font-size: em(36px)
+		letter-spacing: 0.5px
+		font-family: "UbuntuRegular", sans-serif
+		padding-bottom: 12px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			border-bottom: 5px solid #7aaa60
+			height: 5px
+			width: 840px
+			bottom: -5px
+			left: 50%
+			margin-left: -420px
+	&__left
+		text-align: left
+		padding-top: 60px
+		&-description
+			color: #0a0a0a
+			font-family: "UbuntuLight", sans-serif
+			font-weight: bold
+			letter-spacing: 0.5px
+			font-size: em(18px)
+			padding-bottom: 30px
+	&__right
+		padding-top: 60px
+		&-link
+			display: block
+			position: relative
+			z-index: 3
+			border: 2px solid #7aaa60
+			&::after
+				content: ''
+				background-color: rgba(#0e0e0e,.7)
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				z-index: 4
+		&-img
+			display: block
+			width: 100%
+			height: auto
+		&-more
+			display: inline-block
+			border-bottom: 2px solid #f1f1f1
+			line-height: 30px
+			&-wp
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 0
+				right: 0
+				text-align: center
+				color: #f1f1f1
+				font-size: em(30px)
+				text-transform: uppercase
+				letter-spacing: 0.5px
+				z-index: 5
+				.fa
+					display: inline-block
+					width: 100%
+					padding-top: 20px
+.advantages-block
+	padding-top: 88px
+	padding-bottom: 114px
+.advantages
+	&__left
+		&-title
+			color: #1a1919
+			font-family: "UbuntuRegular", sans-serif
+			letter-spacing: 0.5px
+			font-size: em(24px)
+			text-transform: uppercase
+			border-bottom: 5px solid #7aaa60
+			display: inline-block
+			padding-bottom: 8px
+			margin-bottom: 106px
+		&-accordion
+			&-link
+				border: 1px solid #bbb9b9
+				display: block
+				width: 100%
+				height: 64px
+				line-height: 64px
+				font-family: "UbuntuLight", sans-serif
+				font-weight: bold
+				color: #1a1919 !important
+				font-size: em(24px)
+				padding-left: 109px
+				position: relative
+				margin-top: 14px
+				&::before
+					content: ""
+					width: 22px
+					height: 23px
+					background-image: url(../img/arrow.png)
+					background-repeat: no-repeat
+					background-position: left center
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: 50px
+					color: #d5af74
+					font-size: 26px
+					z-index: 2
+			&-active
+				background-color: #a67930
+				color: #f3f1ed !important
+				&::before
+					background-position: right center
+				&::after
+					content: ''
+					position: absolute
+					width: 92px
+					height: 64px
+					background-color: #8e621c
+					left: 0
+					top: 2px
+					z-index: 1
+				&:hover
+					color: #f3f1ed !important
+			&-description
+				padding: 65px 32px 65px 44px
+				border: 1px solid #e7e5e5
+				color: #0a0a0a
+				font-size: em(18px)
+				letter-spacing: 0.5px
+				font-family: "UbuntuRegular", sans-serif
+				display: none
+	&__right
+		&-title
+			color: #1a1919
+			font-family: "UbuntuRegular", sans-serif
+			letter-spacing: 0.5px
+			font-size: em(24px)
+			text-transform: uppercase
+			border-bottom: 5px solid #7aaa60
+			display: inline-block
+			padding-bottom: 8px
+			margin-bottom: 60px
+			padding-right: 54px
+		&-news
+			margin-bottom: 24px
+			height: 144px
+			display: block
+			width: 100%
+			&-img
+				float: left
+				display: block
+				width: 170px
+				height: 144px
+			&-title
+				margin-left: 200px
+				color: #1a1919
+				font-family: "UbuntuLight", sans-serif
+				font-weight: bold
+				line-height: 16px
+				padding-top: 16px
+			&-row
+				margin-left: 200px
+				color: #ccc
+				font-size: em(18px)
+				letter-spacing: 0.5px
+				font-family: "UbuntuRegular", sans-serif
+				padding-top: 12px
+				&-1
+					padding-left: 18px
+					position: relative
+					&::before
+						content: "\f007"
+						font-family: FontAwesome
+						position: absolute
+						left: 0
+						top: 50%
+						transform: translateY(-50%)
+				&-2
+					margin-left: 12px
+					padding-left: 24px
+					position: relative
+					&::before
+						content: "\f1ec"
+						font-family: FontAwesome
+						position: absolute
+						left: 0
+						top: 50%
+						transform: translateY(-50%)
+				&-3
+					margin-left: 12px
+					padding-left: 26px
+					position: relative
+					&::before
+						content: "\f075"
+						font-family: FontAwesome
+						position: absolute
+						left: 0
+						top: 50%
+						transform: translateY(-50%)
+			&-img
+				position: relative
+				&::after
+					content: ''
+					background-image: url(../img/arrow-news.png)
+					background-repeat: no-repeat
+					background-position: center
+					width: 42px
+					height: 34px
+					background-color: #a67930
+					position: absolute
+					display: block
+					left: 0
+					top: 0
+					z-index: 11
+				&::before
+					content: ''
+					background-color: rgba(#fff,.8)
+					display: block
+					position: absolute
+					left: 0
+					right: 0
+					top: 0
+					bottom: 0
+					z-index: 10
+.footer-home
+	background-color: #62481c
+.about-us
+	&__title
+		color: #fff
+		font-size: em(24px)
+		&::after
+			content: ''
+			width: 137px
+			height: 5px
+			background-color: #7aaa60
+	&__item
+	&__link
+.customers
+	&__title
+	&__item
+	&__link
+.useful
+	&__title
+	&__item
+	&__link
