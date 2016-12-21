@@ -19,7 +19,7 @@ body
 	&__link
 		width: 92px
 		height: 126px
-		display: block
+		display: inline-block
 	&__img
 		display: block
 .header-home
@@ -81,6 +81,8 @@ body
 	height: 116px
 	padding-left: 11px
 	z-index: 2
+	left: 0
+	right: 0
 	@extend .clearfix
 	&__item
 		float: left
@@ -251,7 +253,7 @@ body
 			left: 0
 			right: 0
 			transform: translateY(-50%)
-			width: 300px
+			width: 80%
 			margin: 0 auto
 			height: auto
 	&__more
@@ -403,7 +405,7 @@ body
 				font-weight: bold
 				color: #1a1919 !important
 				font-size: em(24px)
-				padding-left: 109px
+				padding-left: 99px
 				position: relative
 				margin-top: 14px
 				&::before
@@ -416,7 +418,7 @@ body
 					position: absolute
 					top: 50%
 					transform: translateY(-50%)
-					left: 50px
+					left: 40px
 					color: #d5af74
 					font-size: 26px
 					z-index: 2
@@ -428,7 +430,7 @@ body
 				&::after
 					content: ''
 					position: absolute
-					width: 92px
+					width: 82px
 					height: 64px
 					background-color: #8e621c
 					left: 0
@@ -512,49 +514,98 @@ body
 						left: 0
 						top: 50%
 						transform: translateY(-50%)
-			&-img
-				position: relative
-				&::after
-					content: ''
-					background-image: url(../img/arrow-news.png)
-					background-repeat: no-repeat
-					background-position: center
-					width: 42px
-					height: 34px
-					background-color: #a67930
-					position: absolute
-					display: block
-					left: 0
-					top: 0
-					z-index: 11
-				&::before
-					content: ''
-					background-color: rgba(#fff,.8)
-					display: block
-					position: absolute
-					left: 0
-					right: 0
-					top: 0
-					bottom: 0
-					z-index: 10
+		&-active
+			position: relative
+			&::after
+				content: ''
+				background-image: url(../img/arrow-news.png)
+				background-repeat: no-repeat
+				background-position: center
+				width: 42px
+				height: 34px
+				background-color: #a67930
+				position: absolute
+				display: block
+				left: 64px
+				top: 60px
+				z-index: 11
+			&::before
+				content: ''
+				background-color: rgba(#fff,.8)
+				display: block
+				position: absolute
+				width: 170px
+				height: 144px
+				left: 0
+				top: 0
+				z-index: 10
 .footer-home
 	background-color: #62481c
-.about-us
+	padding-top: 64px
+	padding-bottom: 50px
+.about-us, .customers, .useful
+	padding-top: 30px
 	&__title
 		color: #fff
 		font-size: em(24px)
+		position: relative
+		padding-bottom: 14px
 		&::after
 			content: ''
 			width: 137px
 			height: 5px
 			background-color: #7aaa60
+			position: absolute
+			bottom: 0
+			left: 0
 	&__item
 	&__link
-.customers
-	&__title
-	&__item
+		position: relative
+		color: #f3f3f3
+		font-size: em(19px)
+		padding: 11px 0 11px 20px
+		display: block
+		&::before
+			content:  "\f101"
+			font-family: FontAwesome
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			color: #392608
+			font-size: 18px
+		&:hover
+			text-decoration: underline
+.f-social
+	font-size: 0
+	text-align: center
+	padding-top: 34px
 	&__link
-.useful
-	&__title
-	&__item
-	&__link
+		width: 57px
+		height: 48px
+		display: inline-block
+		background-color: #c4c4c4
+		text-align: center
+		margin-left: 8px
+		&:first-child
+			margin-left: 0
+		.fa
+			color: #383737
+			font-size: 30px
+			line-height: 48px
+		&:hover
+			.fa
+				color: #70511e
+.copyright
+	padding-top: 18px
+	width: 100%
+	text-align: center
+	font-size: em(20px)
+	color: #fff
+	letter-spacing: 0.25px
+	&::before
+		content:  "\f1f9"
+		font-family: FontAwesome
+	&__year
+		display: block
+		font-family: "MinionProRegular", sans-serif

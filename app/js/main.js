@@ -12,4 +12,11 @@ $(document).ready(function() {
 		$(this).parent().children('.advantages__left-accordion-description').stop(false, true).slideToggle();
 		return false
 	});
+
+	/**/
+	$('.advantages__right-news').hover(function() {
+		$(this).addClass('advantages__right-active');
+	}, function() {
+		$(this).removeClass('advantages__right-active');
+	});
 });

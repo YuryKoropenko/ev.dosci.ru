@@ -43,35 +43,6 @@ a:hover, a:active, a:focus {
 }
 
 /**/
-/*	&-accordion
-			&-link
-				border: 1px solid #bbb9b9
-				display: block
-				width: 100%
-				height: 64px
-				line-height: 64px
-				font-family: "UbuntuLight", sans-serif
-				font-weight: bold
-				color: #1a1919
-				font-size: em(24px)
-				padding-left: 109px
-				position: relative
-				margin-bottom: 14px
-				&::before
-					content: ""
-					width: 22px
-					height: 23px
-					background-image: url(../img/arrow.png)
-					background-repeat: no-repeat
-					background-position: left center
-					position: absolute
-					top: 50%
-					transform: translateY(-50%)
-					left: 50px
-					color: #d5af74
-					font-size: 26px
-				&:hover
-					color: #1a1919*/
 body {
   font-size: 16px;
   min-width: 320px;
@@ -93,7 +64,7 @@ body {
 .logo__link {
   width: 92px;
   height: 126px;
-  display: block;
+  display: inline-block;
 }
 
 .logo__img {
@@ -181,6 +152,8 @@ body {
   height: 116px;
   padding-left: 11px;
   z-index: 2;
+  left: 0;
+  right: 0;
 }
 
 .nav-home__item {
@@ -406,7 +379,7 @@ body {
   left: 0;
   right: 0;
   transform: translateY(-50%);
-  width: 300px;
+  width: 80%;
   margin: 0 auto;
   height: auto;
 }
@@ -598,7 +571,7 @@ body {
   font-weight: bold;
   color: #1a1919 !important;
   font-size: 1.5em;
-  padding-left: 109px;
+  padding-left: 99px;
   position: relative;
   margin-top: 14px;
 }
@@ -613,7 +586,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 50px;
+  left: 40px;
   color: #d5af74;
   font-size: 26px;
   z-index: 2;
@@ -631,7 +604,7 @@ body {
 .advantages__left-accordion-active::after {
   content: '';
   position: absolute;
-  width: 92px;
+  width: 82px;
   height: 64px;
   background-color: #8e621c;
   left: 0;
@@ -742,11 +715,11 @@ body {
   transform: translateY(-50%);
 }
 
-.advantages__right-news-img {
+.advantages__right-active {
   position: relative;
 }
 
-.advantages__right-news-img::after {
+.advantages__right-active::after {
   content: '';
   background-image: url(../img/arrow-news.png);
   background-repeat: no-repeat;
@@ -756,35 +729,117 @@ body {
   background-color: #a67930;
   position: absolute;
   display: block;
-  left: 0;
-  top: 0;
+  left: 64px;
+  top: 60px;
   z-index: 11;
 }
 
-.advantages__right-news-img::before {
+.advantages__right-active::before {
   content: '';
   background-color: rgba(255, 255, 255, 0.8);
   display: block;
   position: absolute;
+  width: 170px;
+  height: 144px;
   left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
   z-index: 10;
 }
 
 .footer-home {
   background-color: #62481c;
+  padding-top: 64px;
+  padding-bottom: 50px;
 }
 
-.about-us__title {
+.about-us, .customers, .useful {
+  padding-top: 30px;
+}
+
+.about-us__title, .customers__title, .useful__title {
   color: #fff;
   font-size: 1.5em;
+  position: relative;
+  padding-bottom: 14px;
 }
 
-.about-us__title::after {
+.about-us__title::after, .customers__title::after, .useful__title::after {
   content: '';
   width: 137px;
   height: 5px;
   background-color: #7aaa60;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about-us__link, .customers__link, .useful__link {
+  position: relative;
+  color: #f3f3f3;
+  font-size: 1.1875em;
+  padding: 11px 0 11px 20px;
+  display: block;
+}
+
+.about-us__link::before, .customers__link::before, .useful__link::before {
+  content: "\f101";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #392608;
+  font-size: 18px;
+}
+
+.about-us__link:hover, .customers__link:hover, .useful__link:hover {
+  text-decoration: underline;
+}
+
+.f-social {
+  font-size: 0;
+  text-align: center;
+  padding-top: 34px;
+}
+
+.f-social__link {
+  width: 57px;
+  height: 48px;
+  display: inline-block;
+  background-color: #c4c4c4;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.f-social__link:first-child {
+  margin-left: 0;
+}
+
+.f-social__link .fa {
+  color: #383737;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.f-social__link:hover .fa {
+  color: #70511e;
+}
+
+.copyright {
+  padding-top: 18px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  color: #fff;
+  letter-spacing: 0.25px;
+}
+
+.copyright::before {
+  content: "\f1f9";
+  font-family: FontAwesome;
+}
+
+.copyright__year {
+  display: block;
+  font-family: "MinionProRegular", sans-serif;
 }
