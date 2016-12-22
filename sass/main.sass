@@ -849,7 +849,7 @@ body
 					font-size: em(18px)
 					font-family: "UbuntuRegular", sans-serif
 					&::before
-						content: ''
+						content: "\f126"
 						font-family: FontAwesome
 						position: absolute
 						left: 0
@@ -929,5 +929,152 @@ body
 		&:hover
 			color: #326219
 			background-color: #ededed
-		&-first
-			
+.contacts
+	padding-top: 9px
+	padding-bottom: 38px
+	&__item
+		color: #5f5e5e
+		font-size: em(17px)
+		letter-spacing: -0.25px
+		position: relative
+		margin-bottom: 16px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: -8px
+			font-family: FontAwesome
+			color: #d88c0f
+			font-size: 30px
+		&-b
+			color: #323232
+		&-m
+			padding-left: 33px
+			&::before
+				content: "\f10b"
+		&-p
+			padding-left: 33px
+			&::before
+				content: "\f095"
+		&-mp
+			padding-left: 28px
+			&::before
+				content: "\f041"
+		&-l
+			padding-left: 43px
+			&::before
+				content: "\f2bc"
+		&-t
+			padding-left: 34px
+			&::before
+				content: "\f253"
+				font-size: 24px
+				top: -3px
+	&__link
+		color: #3257de
+		&:hover
+			color: #3257de
+			text-decoration: underline
+.customers-s
+	padding-top: 9px
+	&__item
+		display: block
+		width: 100%
+		margin-bottom: 8px
+	&__link
+		color: #d88c0f
+		display: block
+		font-family: "UbuntuRegular", sans-serif
+		font-size: em(22px)
+		background-color: #f8f8f8
+		padding: 8px 25px
+		&:hover
+			color: #d88c0f
+.vacancies-cont
+	&__top
+		margin-top: 16px
+		letter-spacing: 0.25PX
+		background-color: #bd790a
+		padding: 5px 2px
+		width: 100%
+		color: #fbfbfb
+		font-size: em(16px)
+		font-family: "UbuntuRegular", sans-serif
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 50px
+	&__item
+		@extend .clearfix
+		padding: 32px 0 28px
+		border-bottom: 1px solid #f4f3f3
+		&-wp
+			+percent(70, 864)
+			height: 68px
+			border: 1px solid #f7e9d1
+			padding: 2px
+			text-align: center
+			overflow: hidden
+			float: left
+		&-icon
+			height: 62px
+			width: auto
+		&-title
+			width: 90.8%
+			color: #6d6c6c
+			font-family: "UbuntuRegular", sans-serif
+			letter-spacing: 0.25px
+			font-size: em(24px)
+			float: right
+			display: block
+			line-height: 100%
+		&-row
+			float: right
+			padding-top: 16px
+			&-item
+				color: #6d6c6c
+				font-size: em(16px)
+				font-family: "UbuntuRegular", sans-serif
+				display: inline-block
+				padding-left: 30px
+				position: relative
+				margin-left: 36px
+				&::before
+					content: ''
+					font-family: FontAwesome
+					color: #bd790a
+					font-size: 24px
+					position: absolute
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+				&-1
+					margin-left: 0
+					&::before
+						content: "\f02d"
+				&-2
+					&::before
+						content: "\f085"
+				&-3
+					&::before
+						content: "\f071"
+						color: #d82e0d
+		&-zp
+			font-family: "UbuntuRegular", sans-serif
+			font-size: em(16px)
+			color: #6d6c6c
+			width: 100%
+			clear: both
+			padding-top: 5px
+			display: block
+			&-b
+				color: #3f3e3e
+				font-weight: bold
+	&__questions
+		text-align: center
+		color: #545456
+		font-family: "UbuntuRegular", sans-serif
+		font-size: 24px
+		letter-spacing: 0.25px
+		padding: 44px 0
+		&-p
+			color: #bd790a
