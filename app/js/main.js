@@ -19,4 +19,11 @@ $(document).ready(function() {
 	}, function() {
 		$(this).removeClass('advantages__right-active');
 	});
+
+	/**/
+	$('.last-news__item').hover(function() {
+		$(this).addClass('last-news__active');
+	}, function() {
+		$(this).removeClass('last-news__active');
+	});
 });

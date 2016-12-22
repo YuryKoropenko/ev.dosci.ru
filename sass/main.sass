@@ -540,9 +540,24 @@ body
 				top: 0
 				z-index: 10
 .footer-home
-	background-color: #62481c
+	background-image: url(../img/footer-bg.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
 	padding-top: 64px
 	padding-bottom: 50px
+	position: relative
+	z-index: 1
+	&::after
+		content: ''
+		position: absolute
+		background-color: rgba(#62481c,.97)
+		display: block
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: -2
 .about-us, .customers, .useful
 	padding-top: 30px
 	&__title
@@ -609,3 +624,310 @@ body
 	&__year
 		display: block
 		font-family: "MinionProRegular", sans-serif
+.nav
+	@extend .clearfix
+	&__item
+		float: left
+		margin-left: 18px
+		padding: 26px 0
+		&-last
+			border-left: 1px solid #654817
+			padding-left: 30px
+			padding-right: 30px
+			float: right
+			height: 80px
+			margin: 18px 0
+	&__link
+		color: #a6792f
+		font-size: em(24px)
+		font-family: "UbuntuLight", sans-serif
+		font-weight: bold
+		display: block
+		padding: 14px 0
+		border-bottom: 6px solid transparent
+		&-active, &:hover
+			border-bottom: 6px solid #654817
+			color: #a6792f
+.company-events
+	position: absolute
+	top: 50%
+	left: 0
+	right: 0
+	transform: translateY(-50%)
+	&__block
+		background-image: url(../img/bg-news.jpg)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		min-height: 281px
+		z-index: 1
+		position: relative
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background-color: rgba(#604415,.95)
+			z-index: -2
+	&__wrapper
+		text-align: center
+		min-height: 281px
+		position: relative
+	&__title
+		color: #efeeeb
+		font-family: "UbuntuRegular", sans-serif
+		font-size: em(48px)
+		letter-spacing: 0.25px
+	&__button
+		background-color: #443112
+		color: #efeeeb
+		font-size: em(24px)
+		letter-spacing: 0.25px
+		padding: 10px 100px
+		display: inline-block
+		margin-top: 18px
+	&__sp
+		color: #b4b3b2
+.news-cont__block, .vacancies-cont__block
+	padding-top: 60px
+.sidebar
+	&__title
+		color: #1a1919
+		font-family: "UbuntuRegular", sans-serif
+		font-size: em(22px)
+		text-transform: uppercase
+		width: 100%
+		border-bottom: 5px solid #7aaa60
+		padding-bottom: 6px
+		margin-bottom: 37 - 28 + px
+.last-news
+	padding-bottom: 72px
+	&__item
+		height: 64 + 56 + px
+		padding: 28px 0
+		border-top: 1px solid #ececec
+		display: block
+		position: relative
+		z-index: 1
+		&:first-child
+			border-top: none
+		&:last-child
+			border-bottom: 1px solid #ececec
+		&:hover
+			color: #1a1919
+	&__active
+		&::before
+			content: ''
+			position: absolute
+			background-color: rgba(#575854,.45)
+			display: block
+			left: 0
+			top: 28px
+			width: 70px
+			height: 64px
+			z-index: 3
+		&::after
+			content: ''
+			width: 22px
+			height: 18px
+			position: absolute
+			background-color: #a67930
+			left: 24px
+			top: 51px
+			background-image: url(../img/l-arrow.png)
+			background-repeat: no-repeat
+			background-position: center
+	&__img
+		width: 70px
+		height: 64px
+		display: block
+		float: left
+	&__title
+		font-family: "RobotoMedium", sans-serif
+		font-size: em(12px)
+		margin-left: 85px
+		padding-top: 10px
+		color: #1a1919
+.recommend
+	padding-bottom: 24px
+	&__item
+		height: 114px
+		display: block
+		padding-bottom: 13px
+	&__img
+		height: 101px
+		width: 106px
+		display: block
+		float: left
+	&__title
+		margin-left: 117px
+		font-size: em(12px)
+		color: #1a1919
+		letter-spacing: 0.25px
+		display: block
+		padding-top: 20px
+	&__description
+		display: block
+		margin-left: 117px
+		color: #d4d0d0
+		font-size: em(12px)
+		letter-spacing: 0.25px
+		padding-top: 2px
+		sup
+			font-size: 0.7em
+.banners
+	&__item
+		display: block
+		margin-bottom: 35px
+		width: 100%
+	&__img
+		display: block
+		width: 100%
+.feed
+	&__item
+		position: relative
+		padding-bottom: 41px
+		border-bottom: 2px solid #ececec
+		margin-top: 39px
+		&:first-child
+			margin-top: 0
+		&-title
+			font-family: "RobotoMedium", sans-serif
+			font-size: em(30px)
+			line-height: 0.8em
+			color: #1a1919
+			letter-spacing: 0.25px
+			margin-bottom: 18px
+		&-user
+			padding-left: 24px
+			position: relative
+			display: inline-block
+			font-family: "UbuntuRegular", sans-serif
+			font-size: em(24px)
+			color: #5f5e5e
+			&::before
+				content: "\f007"
+				font-family: FontAwesome
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+		&-description
+			display: block
+			color: #5f5e5e
+			font-size: em(18px)
+			letter-spacing: 0.25px
+			font-family: "UbuntuRegular", sans-serif
+			padding-top: 12px
+		&-row
+			width: 100%
+			@extend .clearfix
+			line-height: 75px
+			padding-top: 38px
+			&-button
+				display: block
+				float: left
+				height: 77px
+				padding: 0 46px
+				text-transform: uppercase
+				background-color: #a67930
+				line-height: 72px
+				border: 2px solid #785927
+				color: #e4e2e2
+				font-family: "UbuntuRegular", sans-serif
+				letter-spacing: 0.25px
+				font-size: em(24px)
+			&-soc
+				float: right
+				&-first
+					padding-left: 16px
+					margin-right: 14px
+					color: #616161
+					font-size: em(18px)
+					font-family: "UbuntuRegular", sans-serif
+					&::before
+						content: ''
+						font-family: FontAwesome
+						position: absolute
+						left: 0
+						top: 50%
+						transform: translateY(-50%)
+					&:hover
+						color: #616161
+						text-decoration: underline
+				&-icon
+					margin-left: 4px
+					.fa
+						font-size: 24px
+						color: #c9c9c9
+						&:hover
+							color: #444343
+	&__img
+		display: block
+		margin-bottom: 22px
+		width: 100%
+	&__dc
+		width: 78px
+		height: 95px
+		position: absolute
+		text-align: center
+		top: 31px
+		left: 62px
+		&-data
+			height: 57px
+			width: 100%
+			background-color: #a67930
+			color: #ebebeb
+			font-size: 12px
+			font-family: "UbuntuRegular", sans-serif
+			&-wp
+				display: block
+				font-size: 2em
+				letter-spacing: -3px
+				margin-left: -3px
+				line-height: 100%
+		&-com
+			height: 38px
+			width: 100%
+			background-color: #ebeaea
+			color: #8f631c
+			font-size: 14px
+			letter-spacing: -0.25px
+			line-height: 100%
+			&-wp
+				display: block
+				font-size: 1.5em
+				line-height: 100%
+.pagination
+	height: 51px
+	line-height: 51px
+	border: 1px solid #eae9e9
+	display: inline-block
+	text-align: center
+	border-radius: 9px
+	font-family: Arial
+	font-size: 0
+	&__wrapper
+		text-align: center
+		width: 100%
+		padding-top: 74px
+		padding-bottom: 77px
+	&__item
+		display: inline-block
+		width: 48px
+		border-left: 1px solid #eae9e9
+		&-first
+			border-left: none !important
+	&__link
+		color: #326219
+		display: block
+		width: 100%
+		font-size: 20px
+		&:hover
+			color: #326219
+			background-color: #ededed
+		&-first
+			
