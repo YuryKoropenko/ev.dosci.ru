@@ -703,6 +703,8 @@ body
 		border-bottom: 5px solid #7aaa60
 		padding-bottom: 6px
 		margin-bottom: 37 - 28 + px
+		&-w
+			color: #febb05
 .last-news
 	padding-bottom: 72px
 	&__item
@@ -848,6 +850,7 @@ body
 					color: #616161
 					font-size: em(18px)
 					font-family: "UbuntuRegular", sans-serif
+					position: relative
 					&::before
 						content: "\f126"
 						font-family: FontAwesome
@@ -993,7 +996,7 @@ body
 .vacancies-cont
 	&__top
 		margin-top: 16px
-		letter-spacing: 0.25PX
+		letter-spacing: 0.25px
 		background-color: #bd790a
 		padding: 5px 2px
 		width: 100%
@@ -1078,3 +1081,171 @@ body
 		padding: 44px 0
 		&-p
 			color: #bd790a
+.products-cont__block,
+.f-products-cont__block
+	padding-top: 60px
+.products-cont__wp
+	padding-bottom: 27px
+.catalog
+	padding-top: 8px
+	padding-bottom: 52px
+	&__item
+		padding: 8px 0
+	&__link
+		color: #1a1919
+		font-size: em(18px)
+		letter-spacing: 0.5px
+		&:hover
+			color: #1a1919
+		&-col
+			color: #b4b3b3
+.leaders-of-sells
+	padding-bottom: 57px
+	&__item
+		border-bottom: 1px solid #f0efef
+		padding-bottom: 20px
+		padding-top: 20px
+		display: block
+		height: 141px
+		position: relative
+		&-title
+			padding-top: 12px
+		&-img
+			float: none
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+		&-rating
+			margin-left: 117px
+			&-star
+				position: relative
+				font-size: em(24px)
+				color: #febb05
+				&:hover
+					&::before
+						content: "\f005"
+						font-family: FontAwesome
+						position: absolute
+						font-size: 1.1em
+						top: 1px
+						left: -1px
+.search
+	@extend .clearfix
+	&__input
+		height: 60px
+		border-radius: 5px 0 0 5px
+		border: 2px solid #efeeeb
+		padding-left: 34px
+		+percent(756, 870)
+		display: block
+		float: left
+		border-right: none
+		font-size: em(36px)
+	&__button
+		+percent(114, 870)
+		border: 2px solid #efeeeb
+		background-color: #835614
+		display: block
+		float: right
+		border-left: none
+		height: 60px
+		border-radius: 0 5px 5px 0
+		position: relative
+		text-align: center
+		&::after
+			content: "\f002"
+			font-family: FontAwesome
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			color: #fbfbfb
+			font-size: em(28px)
+			letter-spacing: 0.5px
+			line-height: 54px
+.prod-card
+	&__item
+		display: block
+		border: 2px solid #f6f6f6
+		height: 345px
+		position: relative
+		margin-bottom: 42px
+		&:hover
+			.prod-card__item-wp-name
+				color: #e79933
+				text-decoration: underline
+		&-img
+			display: block
+			width: 100%
+			height: 262px
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+		&-wp
+			height: 75px
+			position: absolute
+			background-color: #32581d
+			bottom: 0
+			left: 0
+			right: 0
+			display: inline-block
+			text-align: center
+			&-name
+				display: block
+				text-transform: uppercase
+				color: #f2f2f2
+				font-family: "UbuntuRegular", sans-serif
+				font-size: em(20px)
+				position: absolute
+				top: 50%
+				left: 0
+				right: 0
+				transform: translateY(-50%)
+.path
+	background-color: #32581d
+	padding: 10px 28px
+	&__item
+		display: inline-block
+		&:first-child
+			padding-left: 22px
+			position: relative
+			&::before
+				content: "\f015"
+				font-family: FontAwesome
+				position: absolute
+				color: #fff
+				left: 0
+				top: 0
+				font-size: em(18px)
+		&::before
+			content: '/'
+			font-family: "UbuntuItalic", sans-serif
+			color: #fff
+	&__link
+		color: #fff
+		font-family: "UbuntuItalic", sans-serif
+		font-size: em(18px)
+		&-last
+			color: #c0bebe
+.f-leaders-of-sells
+	&__item
+		position: relative
+		&-img
+			float: none
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0 !important
+		&-rating
+			margin-left: 0
+			margin-right: 117px
+		&-title
+			margin-right: 117px
+			margin-left: 0
+		&-description
+			margin-right: 117px
+			margin-left: 0
+			&-r
+				color: #dc5810
+				text-decoration: line-through
