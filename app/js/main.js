@@ -26,4 +26,7 @@ $(document).ready(function() {
 	}, function() {
 		$(this).removeClass('last-news__active');
 	});
+
+	/**/
+	$(".characteristics__tabs-wp").lightTabs();
 });
