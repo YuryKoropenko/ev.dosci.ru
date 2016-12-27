@@ -256,6 +256,8 @@ body
 			width: 80%
 			margin: 0 auto
 			height: auto
+		&-last
+			padding-top: 0
 	&__more
 		text-align: right
 		display: block
@@ -344,10 +346,10 @@ body
 			position: relative
 			z-index: 3
 			border: 2px solid #7aaa60
+		&-active
 			&::after
 				content: ''
 				background-color: rgba(#0e0e0e,.7)
-				content: ''
 				display: block
 				position: absolute
 				left: 0
@@ -363,7 +365,9 @@ body
 			display: inline-block
 			border-bottom: 2px solid #f1f1f1
 			line-height: 30px
+			display: none
 			&-wp
+				display: none
 				position: absolute
 				top: 50%
 				transform: translateY(-50%)
@@ -1557,3 +1561,174 @@ body
 			&-b
 				color: #1a1919
 				font-weight: bold
+.article-new__block
+	padding-top: 60px
+	padding-bottom: 112px
+.article-new__item-row
+	border-top: 2px solid #ececec
+	border-bottom: 2px solid #ececec
+	padding: 0
+	margin-top: 48px
+	line-height: 46px
+.article-new__item
+	padding-bottom: 0
+	border: none
+.article-new__item-row-tags
+	float: left
+	padding-left: 39px
+	position: relative
+	&::before
+		content: "\f02c"
+		font-family: FontAwesome
+		position: absolute
+		left: 0
+		top: 0
+		font-size: em(24px)
+		color: #c9c9c9
+.article-new__item-row-tags-link
+	font-family: "UbuntuLight", sans-serif
+	font-style: italic
+	letter-spacing: 0.5px
+	font-size: em(12px)
+	color: #616161
+	display: inline-block
+	&:last-child
+		&::after
+			display: none
+	&:hover
+		color: #616161
+		text-decoration: underline
+.article-new
+	&__comments
+		margin-top: 20px
+		&-item
+			@extend .clearfix
+			background-color: #f6f6f6
+			padding: 22px 44px 22px 80px
+		&-img
+			width: 94px
+			height: 94px
+			display: block
+			float: left
+			margin-right: 17px
+		&-name
+			text-transform: uppercase
+			color: #333131
+			font-weight: bold
+			font-family: "UbuntuRegular", sans-serif
+			font-size: em(18px)
+			border-bottom: 2px solid #eae9e9
+			display: inline-block
+			letter-spacing: 1px
+			margin-bottom: 4px
+			padding-bottom: 2px
+		&-text
+			font-family: "UbuntuRegular", sans-serif
+			color: #5f5e5e
+			font-size: em(14px)
+			letter-spacing: 1px
+	&__form
+		&-top
+			display: block
+			color: #333131
+			font-size: em(24px)
+			letter-spacing: 0.5px
+			font-family: "UbuntuRegular", sans-serif
+			padding-top: 18px
+		&-textarea
+			width: 100%
+			height: 267px
+			border: 1px solid #f0eeee
+			background-color: #f7f6f6
+			margin-top: 30px
+			padding: 12px 16px
+			resize: none
+		&-name
+			height: 58px
+			width: 570px
+			border: 1px solid #f0eeee
+			background-color: #f7f6f6
+			padding-left: 18px
+			line-height: 58px
+			margin-top: 16px
+			display: block
+		&-button
+			display: inline-block
+			height: 77px
+			padding: 0 62px
+			line-height: 77px
+			text-transform: uppercase
+			background-color: #a67930
+			border: 2px solid #d8d8d8
+			color: #fbfbfb
+			font-family: "UbuntuRegular", sans-serif
+			font-size: em(24px)
+			letter-spacing: 0.25px
+			margin-top: 17px
+.about__block
+	padding-top: 60px
+	padding-bottom: 98px
+.about
+	&__top
+		@extend .clearfix
+		&-img
+			display: block
+			float: left
+			width: 480px
+			height: 377px
+			border: 5px solid #f6f6f6
+			-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35)
+			-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35)
+			box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35)
+			margin-bottom: 12px
+			margin-right: 24px
+		&-p
+			font-family: "UbuntuRegular", sans-serif
+			color: #5f5e5e
+			font-size: em(16px)
+			letter-spacing: 0.25px
+			padding-bottom: 5px
+			line-height: 1.2em
+			&-c
+				color: #d88c0f
+				&:hover
+					color: #d88c0f
+			&-t
+				text-decoration: underline
+		&-b
+			display: block
+			width: 100%
+	&__center
+		&-title
+			font-family: "UbuntuRegular", sans-serif
+			color: #1a1919
+			font-size: em(24px)
+			letter-spacing: 0.5px
+			padding-top: 14px
+			padding-bottom: 12px
+		&-block
+			&-item
+				color: #3d3d3d
+				font-family: "UbuntuRegular", sans-serif
+				font-size: em(16px)
+				letter-spacing: 0.25px
+				position: relative
+				padding: 5px 0 5px 23px
+				&::before
+					content: "\f101"
+					font-family: FontAwesome
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+					color: #d78f18
+					font-size: 24px
+	&__bottom
+		padding-top: 30px
+		@extend .clearfix
+		&-img
+			float: right
+			margin-right: 0
+			margin-left: 24px
+		&-p
+			padding-bottom: 15px

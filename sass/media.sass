@@ -31,16 +31,109 @@
 	.logo
 		text-align: center
 		margin-bottom: 0
+	.lumber-block
+		min-height: auto !important
+		padding-bottom: 20px
+	.lumber
+		padding-top: 50px
+	.sales-leader__wrapper
+		padding: 20px 0
+	.sales-leader__button-wrapper
+		padding-top: 20px
+	.footer-home__about-us,
+	.footer-home__customers,
+	.footer-home__useful
+		text-align: center
+	.about-us__title,
+	.customers__title,
+	.useful__title
+		text-align: center
+		&::after
+			left: 50%
+			margin-left: -68.5px
+	.about-us__item,
+	.customers__item,
+	.useful__item
+		display: block
+	.about-us__link,
+	.customers__link,
+	.useful__link
+		display: inline-block
+	.about-us,
+	.customers,
+	.useful
+		width: 137px
+		margin: 0 auto
+		text-align: left
+		padding-bottom: 30px
+	.advantages-block
+		padding: 20px 0 !important
+	.advantages__right-title
+		margin-bottom: 20px
+	.advantages__left-title
+		margin-bottom: 6px
+	.header
+		.nav
+			text-align: center
+			padding-bottom: 10px
+			padding-top: 0
+			&__item
+				display: inline-block
+				float: none
+				margin: 0 6px
 	/**/
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.mode
+		margin-top: 10px
+		margin-bottom: 10px
+	.nav-home
+		height: 100%
+		position: static
+		padding-left: 0
+		float: none
+		width: 100%
+		&__item
+			width: 100%
+			line-height: 100%
+			margin-left: 0
+			text-align: center
+			padding: 0
+			float: none
+			.nav-home__link
+				border: none
+			&:hover
+				background-color: #2a650a
+			.nav-home__link-active
+				background-color: #2a650a
+	.nav-home__item-last
+		display: block
+		float: none
+		width: 100%
+		text-align: center
+		height: 100%
+		margin: 0
+		border-left: none
+		a
+			display: inline-block
+			float: none
+	.row-first
+		background-color: #377217
+	.sales-leader__tov-img
+		width: auto
+	.slide__name
+		padding-left: 0
+		padding-right: 0
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.sales-leader__tov-img
+		width: 100%
+		display: block
 	/**/
 
 

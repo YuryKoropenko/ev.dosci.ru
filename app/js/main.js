@@ -27,6 +27,21 @@ $(document).ready(function() {
 		$(this).removeClass('last-news__active');
 	});
 
+/**/
+	$('.lumber__right-link').hover(function() {
+		$(this).addClass('lumber__right-active');
+		$('.lumber__right-more').fadeIn();
+		$('.lumber__right-more-wp').fadeIn();
+	}, function() {
+		$(this).removeClass('lumber__right-active');
+		$('.lumber__right-more').fadeOut();
+		$('.lumber__right-more-wp').fadeOut();
+	});
+
 	/**/
-	$(".characteristics__tabs-wp").lightTabs();
+	$('.sales-leader__more-link').on('click', function() {
+		$('.sales-leader__tov-last').removeClass('hidden');
+		$(this).hide();
+		return false
+	});
 });
