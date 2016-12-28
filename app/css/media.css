@@ -21,6 +21,9 @@
     padding-left: 22px;
     margin-bottom: 2px;
   }
+  .contact__item-b {
+    margin-top: -2px;
+  }
   /**/
 }
 
@@ -99,11 +102,87 @@
     float: none;
     margin: 0 6px;
   }
+  .article-new__form {
+    padding-bottom: 20px;
+  }
+  .last-news {
+    padding-bottom: 20px;
+  }
+  .banners__item {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact__wp,
+  .pagination__wrapper,
+  .pokupatelam__dos {
+    padding-bottom: 20px;
+  }
+  .contact__item-b {
+    margin-top: 0;
+  }
+  .contact__first {
+    float: left;
+  }
+  .contact__last {
+    float: right;
+  }
+  .p-pagination {
+    margin-bottom: 20px;
+  }
+  .vacancies-cont__item {
+    text-align: center;
+  }
+  .vacancies-cont__item-wp {
+    float: none;
+    width: 70px;
+    margin: 0 auto;
+  }
+  .vacancies-cont__item-title {
+    float: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .vacancies-cont__item-row {
+    float: none;
+    display: inline-block;
+  }
+  .vacancies-cont__item-row-item {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .vacancies-cont__top {
+    margin-bottom: 20px;
+  }
+  .products-cont__block,
+  .vacancies-cont__block,
+  .about__block,
+  .f-products-cont__block,
+  .contact__block,
+  .article-new__block,
+  .pokupatelam__block,
+  .news-cont__block {
+    padding: 20px 0;
+  }
   /**/
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .article-new__comments-item {
+    padding: 22px 44px;
+  }
+  .article-new__form-name {
+    width: 100%;
+  }
+  .about__top-img {
+    width: 100% !important;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+  }
   .mode {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -155,14 +234,81 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .pagination__item {
+    width: 38px;
+  }
+  .pagination {
+    line-height: 41px;
+    height: 41px;
+  }
+  .prod-card__item {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /**/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .article-new__item-row-tags {
+    display: block;
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .feed__item-row-soc {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .article-new__comments-item {
+    padding: 10px 20px;
+  }
+  .feed__dc {
+    display: none;
+  }
+  .banners__item {
+    width: 100%;
+  }
   .sales-leader__tov-img {
     width: 100%;
     display: block;
+  }
+  .contact__first {
+    float: none;
+    text-align: center;
+  }
+  .contact__last {
+    float: none;
+    text-align: center;
+  }
+  .feed__item-row-soc {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .feed__item-row {
+    line-height: 100%;
+    text-align: center;
+  }
+  .feed__item-row-button {
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .pokupatelam__bg-img {
+    width: 100%;
+    display: block;
+  }
+  .pokupatelam__bg-title {
+    width: 100%;
+  }
+  .pokupatelam__bg-par {
+    width: 100%;
+  }
+  .prod-card__item {
+    width: 100%;
   }
   /**/
 }

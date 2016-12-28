@@ -190,6 +190,10 @@ input:-ms-input-placeholder {
   width: 100%;
 }
 
+.slider-prod .prod-slider img {
+  width: 100%;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -1102,6 +1106,7 @@ body {
 
 .news-cont__block, .vacancies-cont__block {
   padding-top: 60px;
+  padding-bottom: 77px;
 }
 
 .sidebar__title {
@@ -1405,7 +1410,6 @@ body {
   text-align: center;
   width: 100%;
   padding-top: 74px;
-  padding-bottom: 77px;
 }
 
 .pagination__item {
@@ -1440,7 +1444,7 @@ body {
   font-size: 1.0625em;
   letter-spacing: -0.25px;
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .contacts__item::before {
@@ -1551,7 +1555,6 @@ body {
 }
 
 .vacancies-cont__item-wp {
-  width: 8.10185%;
   height: 68px;
   border: 1px solid #f7e9d1;
   padding: 2px;
@@ -1640,7 +1643,7 @@ body {
   font-family: "UbuntuRegular", sans-serif;
   font-size: 24px;
   letter-spacing: 0.25px;
-  padding: 44px 0;
+  padding: 44px 0 0;
 }
 
 .vacancies-cont__questions-p {
@@ -1650,6 +1653,7 @@ body {
 .products-cont__block,
 .f-products-cont__block {
   padding-top: 60px;
+  padding-bottom: 126px;
 }
 
 .products-cont__wp {
@@ -2362,6 +2366,7 @@ body {
   display: block;
   float: left;
   margin-right: 17px;
+  margin-bottom: 5px;
 }
 
 .article-new__comments-name {
